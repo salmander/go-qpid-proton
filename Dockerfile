@@ -1,6 +1,8 @@
 FROM golang:1.7
 
+LABEL maintainer "Salman Ahmed <salman.great@gmail.com>"
 
+# Install all tools required to build the `proton c` library
 RUN apt-get update && apt-get install -y \
 	cmake \
 	cmake-curses-gui \
